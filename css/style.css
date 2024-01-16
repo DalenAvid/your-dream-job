@@ -1,0 +1,234 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Roboto&display=swap");
+/*fonts*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  padding: 20vh 10vw;
+}
+
+h1 {
+  color: white;
+  font-size: 6rem;
+}
+
+ul {
+  background: rgba(211, 211, 211, 0.188);
+  max-width: 35rem;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #913CFF;
+  color: white;
+  border: none;
+  max-width: 37rem;
+  max-height: 8rem;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px #8E36FF;
+  padding: 0.5rem 2rem;
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.For-the-candidate {
+  color: lightgray;
+  font-size: 1.4rem;
+  display: none;
+  font-style: italic;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.links .link {
+  margin: 1rem 2.5rem 0 0;
+}
+.links p {
+  color: lightgray;
+  font-size: 1.6rem;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+.description {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  animation: slideInFromLeft 0.5s ease-out;
+  color: white;
+  overflow: hidden;
+}
+
+.fromRight {
+  animation: slideInFromRight 1s ease-out;
+}
+
+.fromLeft {
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+h2,
+h3 {
+  animation: scalAnim 4s linear infinite;
+}
+
+@keyframes scalAnim {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.2rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  75% {
+    transform: translateY(-0.2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 1400px) {
+  body {
+    background-image: url("../images/desktop.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/desktop.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h3, h2 {
+    font-size: 3rem;
+  }
+  button {
+    max-width: 40rem;
+    max-height: 10rem;
+    font-size: 3.5rem;
+    border-radius: 10px;
+  }
+  ul {
+    max-width: 50rem;
+  }
+  li {
+    font-size: 2.5rem;
+  }
+  .links p {
+    font-size: 2.5rem;
+  }
+  .links a {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  body {
+    background-image: url("../images/desktop.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+@media screen and (max-width: 768px) {
+  .links .link {
+    margin: 0.5rem;
+  }
+  ul {
+    max-width: 20rem;
+  }
+  li {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  body {
+    background-image: url("../images/mobile.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  h2,
+  h3 {
+    max-width: 15rem;
+  }
+  button {
+    max-width: 15rem;
+    max-height: 4rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem 0.8rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .links .link {
+    margin: 0.1rem;
+  }
+  ul {
+    min-width: 11rem;
+    max-width: 15rem;
+  }
+  li {
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */
